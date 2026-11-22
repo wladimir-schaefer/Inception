@@ -1,0 +1,60 @@
+```gitignore
+# ==========================================
+# 42 School - Inception
+# ==========================================
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.env
+secrets/
+**/secrets/
+*.pem
+*.key
+
+# Docker Compose overrides
+docker-compose.override.yml
+compose.override.yml
+
+# Docker persistent data
+data/
+**/data/
+volumes/
+**/volumes/
+
+# Database files and backups
+*.sql
+*.sql.gz
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+
+# WordPress generated files
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# Logs
+*.log
+logs/
+**/logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Python cache (if using helper scripts)
+__pycache__/
+*.pyc
+```
