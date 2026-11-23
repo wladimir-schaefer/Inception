@@ -44,6 +44,7 @@ CREATE DATABASE IF NOT EXISTS \`$db_name\`;
 CREATE USER IF NOT EXISTS '$db_user'@'%' IDENTIFIED BY '${escaped_db_password}';
 GRANT ALL PRIVILEGES ON \`$db_name\`.* TO '$db_user'@'%';
 ALTER USER 'root'@'localhost' IDENTIFIED BY '${escaped_root_password}';
+DROP USER IF EXISTS ''@'localhost';
 SQL
 
     # Stop temporary server
